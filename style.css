@@ -82,6 +82,11 @@ body{
     font-family: "Bebas";
     font-size: 150px;
 }
+@media (max-width:680px){
+    .titulo-pags{
+        font-size: 70px;
+    }
+  }
 .subtitulo{
     font-family: "Bebas";
     font-size: 26px;   
@@ -91,7 +96,9 @@ body{
     background-size: 100%;
     height: 359px;
     display: flex;
-    align-items: center
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 @media (max-width:596px){
     .subtitulo{
@@ -205,8 +212,8 @@ h6{
 }
 /*contacto*/
 .container-contacto{
-    margin: 0;
-    padding: 0;
+      width: 100%;
+      max-width: none;
 }
 .contenedor-redes-nombres{
     width: 49vw;
@@ -234,7 +241,7 @@ p{
     font-size: 21px;
 }
 .contenido-contacto{
-    display: flex;
+    margin: 30px 0px 30px 0px;
 }
 .seccion-formulario{
     display: flex;
