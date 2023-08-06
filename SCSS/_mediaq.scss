@@ -1,0 +1,68 @@
+@media (max-width:1050px){
+  .contenido-ubicacion{
+      display: flex;
+      flex-direction: column;
+  }
+}
+@media (max-width:1050px){
+  .seccion-promociones{
+      grid-template-columns: 1fr;
+      grid-template-rows: 400px 100px 400px 100px;
+      margin: 150px;
+      grid-template-areas:
+      'dosuno '
+      'txdos-uno'
+      'cincuenta'
+      'tx-cincuenta';
+  }
+}
+@media (max-width:680px){
+    .titulo-pags{
+        font-size: 70px;
+    }
+    .servicios{
+      width: 310px;
+      margin: 0px 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  }
+  @media (max-width:596px){
+    .subtitulo{
+        display:inline-block;
+        background-color: #fff0fb;
+        border: 2px solid #FDCEDF;
+        border-radius: 10px;
+    }
+    .servicios-inicio{
+      margin-top: 68px;
+    }
+  }
+  @media (min-width:596px){
+    .servicios-inicio{
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+  }
+  @media (max-width:359px){
+    .encabezado-pags{
+        width: 465px;
+    }
+    .encabezado{
+        width: 465px;
+    }
+    header{
+        width: 465px;
+    }
+  }
+  @media (max-width:350px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 265px;
+        width: 465px;
+    }
+  } 
+
+  

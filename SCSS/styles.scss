@@ -1,0 +1,19 @@
+//Reset (vars, reset, mixin)
+@import './vars-mixin';
+@import './fuentes';
+
+
+//Layout (grid, componentes, cabeza cuerpo y pie)
+@import './layout-grid-promociones';
+@import './componentes/navbar';
+@import './componentes/encadezados';
+@import './componentes/main-index';
+@import './componentes/main-ubicacion';
+@import './componentes/main-servicios';
+@import './componentes/main-contacto';
+@import './componentes/main-promociones';
+@import './componentes/_footer.scss';
+//Media queris
+@import './mediaq';
+
+//Muy bien!,  solo falta hacer sass el contenido de servicios, promocines y contacto; tambien acomodar las mediaqueris

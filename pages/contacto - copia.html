@@ -6,13 +6,17 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!-- Cdn bootstrap -->
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-            <link rel="stylesheet" href="../style.css">
+            <link rel="stylesheet" href="../CSS/styles.css">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+            <!--Animate CSS-->
+            <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
             <title>Nails Studio</title>
         </head>
 <body>  
@@ -21,29 +25,28 @@
         <div class="row">
           <div class="col col-12">
             <header>
-                <!--Nav Bar de Bootstrap-->
                 <nav class="navbar navbar-expand-lg menu">
-                    <div class="container-fluid menu-letras">
-                        <img class="logo-arriba" src="../asses/logo.jpg" alt="Logo de Salon Nails">
+                    <div class="container-fluid menu__div">
+                        <img class="menu__div__img" src="../asses/logo.jpg" alt="Logo de Salon Nails">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button> 
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class=" navbar-brand palabra-lista-grande" aria-current="page" href="../index.html">Inicio</a>
+                                    <a class=" navbar-brand menu__div__a--grande" aria-current="page" href="../index.html">Inicio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link palabra-lista" href="./ubicacion.html">Ubicación</a>
+                                    <a class="nav-link menu__div__a" href="./ubicacion.html">Ubicación</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link palabra-lista" href="./servicios.html">Servicios</a>
+                                    <a class="nav-link menu__div__a" href="./servicios.html">Servicios</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link palabra-lista" href="./contacto - copia.html">Contacto</a>
+                                    <a class="nav-link menu__div__a" href="./contacto - copia.html">Contacto</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link palabra-lista" href="./promociones.html">Promociones</a>
+                                    <a class="nav-link menu__div__a" href="./promociones.html">Promociones</a>
                                 </li>
                             </ul>
                         </div>
@@ -51,7 +54,7 @@
                 </nav>
             </header>
             <section class="encabezado-pags">
-                <h1  class="titulo-pags">Contacto</h1>
+                <h1  class="encabezado-pags__h1 animate__animated animate__zoomIn">Contacto</h1>
                 <!--acá va la foto grande-->
             </section>
           </div>
@@ -59,19 +62,19 @@
         <div class="row align-items-center justify-content-around contenido-contacto">
             <div class="col">
                 <!-- sector redes -->
-                <section class="contenedor-redes-nombres">
+                <section class="contenido-contacto__section">
                     <!--acá van las fotitos de las redes y los nombres-->
-                    <div class="redes-nombres">
-                        <img class="foto-redes" src="../asses/instagram.png" alt="Instagram">
-                        <p class="nombre-redes">@salonnails</p>
+                    <div class="contenido-contacto__section__div">
+                        <img class="contenido-contacto__section__div__img" src="../asses/instagram.png" alt="Instagram">
+                        <p class="contenido-contacto__section__div__p">@salonnails</p>
                     </div>
-                    <div class="redes-nombres">
-                        <img class="foto-redes" src="../asses/whatsapp.png" alt="Whatsapp">
-                        <p class="nombre-redes">+54 11 12345678</p>
+                    <div class="contenido-contacto__section__div">
+                        <img class="contenido-contacto__section__div__img" src="../asses/whatsapp.png" alt="Whatsapp">
+                        <p class="contenido-contacto__section__div__p">+54 11 12345678</p>
                     </div>
-                    <div class="redes-nombres">
-                        <img class="foto-redes" src="../asses/facebook.png" alt="Facebook">
-                        <p class="nombre-redes">Salon Nails</p>
+                    <div class="contenido-contacto__section__div">
+                        <img class="contenido-contacto__section__div__img" src="../asses/facebook.png" alt="Facebook">
+                        <p class="contenido-contacto__section__div__p">Salon Nails</p>
                     </div>
                 </section>
             </div>
@@ -81,25 +84,25 @@
                 <h6>
                      Contactanos por este medio, reyenando el formulario:
                 </h6>
-                <form action="form.php">
+                <form class="seccion-formulario__form" action="form.php">
                     <input type="text" placeholder="Nombre" maxlength="15">
                     <input type="text" placeholder="Apellido" maxlength="15">
                     <input type="text" placeholder="Correo electronico" maxlength="35">
                     <input type="text" placeholder="Escribe tu consulta" >
                 </form>
-                <button>Enviar</button>  
+                <button class="seccion-formulario__button">Enviar</button>  
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <footer>
                     <nav class="lista-redes">
-                        <ul>
-                            <li><a href="https://www.instagram.com" class="redes">Instagram</a></li>
-                            <li><a href="https://www.whatsapp.com" class="redes">Whatsapp</a></li>
-                            <li><a href="https://www.facebook.com" class="redes">Facebook</a></li>
-                        </ul>
-                    </nav>          
+                <ul>
+                    <li class="lista-redes__ul__li"><a href="https://www.instagram.com" class="lista-redes__ul__li__a">Instagram</a></li>
+                    <li class="lista-redes__ul__li"><a href="https://www.whatsapp.com" class="lista-redes__ul__li__a">Whatsapp</a></li>
+                    <li class="lista-redes__ul__li"><a href="https://www.facebook.com" class="lista-redes__ul__li__a">Facebook</a></li>
+                </ul>
+            </nav>          
                     <p class="copy">copy by Agustina Nair</p>
                     <img class="logo-abajo" src="../asses/logo.jpg" alt="Logo de Salon Nails">
                 </footer>  

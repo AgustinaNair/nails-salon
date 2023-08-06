@@ -1,0 +1,14 @@
+@mixin h6{
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+}
+@mixin w-h-400{
+    width: 400px;
+    height: 400px;
+}
+@mixin d-f-c{
+    display: flex;
+    flex-direction: column;
+}
+$background-rosita:#ffade9;
+$border:#FDCEDF;

@@ -1,0 +1,23 @@
+/*servicios*/
+.servicios__div{
+    display: flex;
+    margin: 40px;
+    justify-content: center;
+    &__div{
+        width: 310px;
+        margin: 0px 100px;
+        @include d-f-c;
+        align-items: center;
+        margin-bottom: 30px;
+        &__img{
+            width: 325px;
+            height: 325px;
+            border-radius: 50%;
+            border: solid 5px #FDCEDF
+        }
+        &__h6{
+            font-family: 'EB Garamond', serif;
+            font-size: 53px;
+        }
+    }
+}

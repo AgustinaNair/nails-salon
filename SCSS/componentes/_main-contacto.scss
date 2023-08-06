@@ -1,0 +1,53 @@
+/*contacto*/
+//redes
+.contenido-contacto{
+  margin: 30px 0px 30px 0px;
+  &__section{
+    width: 49vw;
+    margin: 30px;
+    &__div{
+      display: flex;
+      align-items: center;
+      padding-left: 10vw;
+      &__img{
+        margin: 30px;
+        width: 100px;
+        height: 100px;
+        border-radius: 35px;
+      }
+      &__p{
+        font-family: 'Nunito', sans-serif;
+        text-align: center; 
+        font-size: 21px;
+      }
+    }
+  }
+}
+
+
+
+//forms
+.seccion-formulario{
+@include d-f-c;
+width: 49vw;
+margin: 30px;
+  &__button{
+    color: #d4089e;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    height: 30px;
+    width: 15vw;
+    margin: 20px 0 0 180px;
+    background-color: #FDCEDF;
+    border: #99479f solid 2px;
+    border-radius: 10px;
+    }
+  &__form{
+    @include d-f-c;
+    width: 25vw;
+    margin-left: 100px;
+    justify-content: center;
+    }
+}
+
+

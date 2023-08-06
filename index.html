@@ -12,46 +12,38 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <!-- Cdn bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <!--Animate CSS-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Nails Studio</title>
 </head>
 <body>
     <header>
-        <!-- Nav Bar sin Bootstrap-->
-        <!-- <img class="logo-arriba" src="./asses/logo.jpg" alt="Logo de Salon Nails">
-        <nav class="menu">
-            <ul class="ul-menu">
-                <li><a href="./index.html" class="navegacion">Inicio</a></li>
-                <li><a href="./pages/ubicacion.html" class="navegacion">Ubicación</a></li>
-                <li><a href="./pages/servicios.html" class="navegacion">Servicios</a></li>
-                <li><a href="./pages/contacto.html" class="navegacion">Contacto</a></li>
-                <li><a href="./pages/promociones.html" class="navegacion">Promociones</a></li>
-            </ul>
-        </nav> -->
-
         <!--Nav Bar de Bootstrap-->
         <nav class="navbar navbar-expand-lg menu">
-            <div class="container-fluid menu-letras">
-              <img class="logo-arriba" src="./asses/logo.jpg" alt="Logo de Salon Nails">
+            <div class="container-fluid menu__div">
+              <img class="menu__div__img" src="./asses/logo.jpg" alt="Logo de Salon Nails">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button> 
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class=" navbar-brand palabra-lista-grande" aria-current="page" href="./index.html">Inicio</a>
+                    <a class=" navbar-brand menu__div__a--grande" aria-current="page" href="./index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link palabra-lista" href="./pages/ubicacion.html">Ubicación</a>
+                    <a class="nav-link menu__div__a" href="./pages/ubicacion.html">Ubicación</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link palabra-lista" href="./pages/servicios.html">Servicios</a>
+                    <a class="nav-link menu__div__a" href="./pages/servicios.html">Servicios</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link palabra-lista" href="./pages/contacto - copia.html">Contacto</a>
+                    <a class="nav-link menu__div__a" href="./pages/contacto - copia.html">Contacto</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link palabra-lista" href="./pages/promociones.html">Promociones</a>
+                    <a class="nav-link menu__div__a" href="./pages/promociones.html">Promociones</a>
                   </li>
                 </ul>
               </div>
@@ -61,75 +53,43 @@
 
     <main>
         <section class="encabezado">
-            <h1 class="titulo">Salon Nails</h1>
-            <h3 class="subtitulo">El mejor centro de estetica de latinoamerica</h3>
+            <h1 class="encabezado__h1 animate__animated animate__zoomIn">Salon Nails</h1>
+            <h3 class="encabezado__h2">El mejor centro de estetica de latinoamerica</h3>
             <!--acá va la foto grande-->
             
         </section>
         <section class="servicios-inicio">
-          <div class="container text-center centrar">
-            <div class="row">
-              <div class="col col-sm-6 col-lg-auto">
-                <a href="./pages/servicios.html"><img  class="foto-redonda"src="./asses/esculpidas.jpg" alt="Foto de uñas esculpidas"></a>
+          <div class="container text-center servicios-inicio__div">
+            <div class="row servicios-inicio__div__div">
+              <div class="col col-sm-6 col-lg-auto servicios-inicio__div__div__div">
+                <a href="./pages/servicios.html"><img  class="servicios-inicio__div__div__div__img"src="./asses/esculpidas.jpg" alt="Foto de uñas esculpidas"></a>
                 Esculpidas
               </div>
-              <div class="col col-sm-6 col-lg-auto">
-                <a href="./pages/servicios.html"><img  class="foto-redonda"src="./asses/semi.jpg" alt="Foto de uñas con semipermanente"></a>
+              <div class="col col-sm-6 col-lg-auto servicios-inicio__div__div__div">
+                <a href="./pages/servicios.html"><img  class="servicios-inicio__div__div__div__img"src="./asses/semi.jpg" alt="Foto de uñas con semipermanente"></a>
                 Semi
               </div>
-              <div class="col col-sm-6 col-lg-auto">
-                <a href="./pages/servicios.html"><img  class="foto-redonda"src="./asses/pedicuria.jpg" alt="Foto de pie con pedicuria"></a>
+              <div class="col col-sm-6 col-lg-auto servicios-inicio__div__div__div">
+                <a href="./pages/servicios.html"><img  class="servicios-inicio__div__div__div__img"src="./asses/pedicuria.jpg" alt="Foto de pie con pedicuria"></a>
                 Pedicuria
               </div>
-              <div class="col col-sm-6 col-lg-auto">
-                <a href="./pages/servicios.html"><img class="foto-distinta" src="./asses/boton-mas.png" alt="Foto de un más"></a>
+              <div class="col col-sm-6 col-lg-auto servicios-inicio__div__div__div">
+                <a href="./pages/servicios.html"><img class="servicios-inicio__div__div__div__img--distinta" src="./asses/boton-mas.png" alt="Foto de un más"></a>
                 Y más..
               </div>
             </div>
-            <!-- <div class="row">
-              <div class="col">
-                Column
-              </div>
-              <div class="col">
-                Column
-              </div>
-              <div class="col">
-                Column
-              </div>
-              <div class="col">
-                Column
-              </div>
-            </div> -->
+            
           </div>
         </div>
-
-
-
-
-            <!-- <nav>
-                <ul class="ul-fotos-inicio">
-                    fotitos con los nombres de algunos servicios
-                    <li><a href="./pages/servicios.html"><img  class="foto-redonda"src="./asses/esculpidas.jpg" alt="Foto de uñas esculpidas"></a></li>
-                    <li><a href="./pages/servicios.html"><img  class="foto-redonda"src="./asses/semi.jpg" alt="Foto de uñas con semipermanente"></a></li>
-                    <li><a href="./pages/servicios.html"><img  class="foto-redonda"src="./asses/pedicuria.jpg" alt="Foto de pie con pedicuria"></a></li>
-                    <li><a href="./pages/servicios.html"><img class="foto-distinta" src="./asses/boton-mas.png" alt="Foto de un más"></a></li>
-                </ul>
-            </nav>
-            <ul class="ul-servicios-inicio">
-                <li>Esculpidas</li>
-                <li>Semi</li>
-                <li>Pedicuria</li> 
-                <li>Y más...</li>               
-            </ul> -->
         </section>
 
         <!-- Contenido del inicio -->
 
         <section class="cont-inicio">
-            <h4 >
+            <h4 class="cont-inicio__h4">
                 ¿Quiénes somos?
             </h4>
-            <p>
+            <p class="cont-inicio__p">
                 En Salon Nails, somos un equipo apasionado de artistas de las uñas que se dedican a brindarte una experiencia excepcional de belleza y bienestar en el corazón de Argentina.
 
 Nuestra historia comenzó hace más de una década, cuando nuestra fundadora, Agustina, decidió convertir su pasión por las uñas en un lugar acogedor donde los clientes pudieran relajarse y sentirse mimados. Desde entonces, hemos estado embelleciendo las manos y los pies de nuestros clientes, uno a la vez, y hemos visto cómo nuestras creaciones han elevado la confianza y la autoestima de cada persona que pasa por nuestras puertas.
@@ -150,9 +110,9 @@ Estamos comprometidos con la excelencia y la satisfacción del cliente. No solo 
     <footer>
             <nav class="lista-redes">
                 <ul>
-                    <li><a href="https://www.instagram.com" class="redes">Instagram</a></li>
-                    <li><a href="https://www.whatsapp.com" class="redes">Whatsapp</a></li>
-                    <li><a href="https://www.facebook.com" class="redes">Facebook</a></li>
+                    <li class="lista-redes__ul__li"><a href="https://www.instagram.com" class="lista-redes__ul__li__a">Instagram</a></li>
+                    <li class="lista-redes__ul__li"><a href="https://www.whatsapp.com" class="lista-redes__ul__li__a">Whatsapp</a></li>
+                    <li class="lista-redes__ul__li"><a href="https://www.facebook.com" class="lista-redes__ul__li__a">Facebook</a></li>
                 </ul>
             </nav>          
             <p class="copy">copy by Agustina Nair</p>

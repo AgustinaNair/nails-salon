@@ -1,0 +1,352 @@
+@charset "UTF-8";
+/* Tipografias
+font-family: 'Nunito', sans-serif;
+
+font-family: "Bebas";
+
+font-family: 'EB Garamond', serif;
+*/
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+@font-face {
+  font-family: "Bebas";
+  src: url(../asses/BebasNeue-Regular.ttf);
+}
+.seccion-promociones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px 100px;
+  margin: 150px;
+  grid-column-gap: 26px;
+  grid-template-areas: "dosuno cincuenta" "txdos-uno tx-cincuenta";
+}
+
+body {
+  background-color: #f3f4f0;
+}
+
+.container-contacto {
+  width: 100%;
+  max-width: none;
+}
+
+.menu {
+  background: linear-gradient(to top, #fafafa, #ffade9);
+  width: 100%;
+  border-bottom: 2px solid #FDCEDF;
+}
+.menu__div {
+  display: flex;
+  justify-content: center;
+}
+.menu__div div ul li:hover {
+  border: 2px solid rgba(239, 100, 174, 0.3411764706);
+  border-radius: 10px;
+  background-color: rgba(253, 206, 223, 0.3215686275);
+}
+.menu__div__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #99479f;
+  margin: 0px 40px 0px 20px;
+}
+.menu__div__a {
+  font-size: 1.2em;
+}
+.menu__div__a--grande {
+  font-size: 1.9em;
+  padding-left: 4px;
+}
+
+/*Encabezado*/
+.encabezado {
+  background-image: url(../asses/index-foto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 359px;
+}
+.encabezado__h1 {
+  font-family: "Bebas";
+  font-size: 150px;
+  margin-bottom: 0;
+}
+.encabezado__h2 {
+  font-family: "Bebas";
+  font-size: 26px;
+}
+
+.encabezado-pags {
+  background-image: url(../asses/index-foto.jpg);
+  background-size: 100%;
+  height: 359px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.encabezado-pags__h1 {
+  font-family: "Bebas";
+  font-size: 150px;
+}
+
+/*Lista/Fotos de servicios en inicio*/
+.servicios-inicio__div__div {
+  display: flex;
+  justify-content: space-around;
+}
+.servicios-inicio__div__div__div {
+  display: flex;
+  flex-direction: column;
+}
+.servicios-inicio__div__div__div__img {
+  width: 196px;
+  height: 196px;
+  border-radius: 100px;
+  border: 4px solid rgba(0, 0, 0, 0.468);
+}
+.servicios-inicio__div__div__div__img--distinta {
+  width: 196px;
+  height: 196px;
+  border-radius: 100px;
+}
+
+/* Contenido de inicio */
+.cont-inicio {
+  display: flex;
+  width: 97vw;
+  flex-direction: column;
+}
+.cont-inicio__h4 {
+  font-family: "Nunito", sans-serif;
+  font-size: 49px;
+  text-align: center;
+}
+.cont-inicio__p {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  font-size: 21px;
+  width: 67vw;
+  margin-left: 15vw;
+}
+
+/*ubicación*/
+.contenido-ubicacion {
+  display: flex;
+  margin: 100px;
+  align-items: center;
+  justify-content: space-around;
+}
+.contenido-ubicacion__p {
+  width: 300px;
+}
+.contenido-ubicacion__section {
+  border: 5px outset #FDCEDF;
+}
+
+/*servicios*/
+.servicios__div {
+  display: flex;
+  margin: 40px;
+  justify-content: center;
+}
+.servicios__div__div {
+  width: 310px;
+  margin: 0px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.servicios__div__div__img {
+  width: 325px;
+  height: 325px;
+  border-radius: 50%;
+  border: solid 5px #FDCEDF;
+}
+.servicios__div__div__h6 {
+  font-family: "EB Garamond", serif;
+  font-size: 53px;
+}
+
+/*contacto*/
+.contenido-contacto {
+  margin: 30px 0px 30px 0px;
+}
+.contenido-contacto__section {
+  width: 49vw;
+  margin: 30px;
+}
+.contenido-contacto__section__div {
+  display: flex;
+  align-items: center;
+  padding-left: 10vw;
+}
+.contenido-contacto__section__div__img {
+  margin: 30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 35px;
+}
+.contenido-contacto__section__div__p {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  font-size: 21px;
+}
+
+.seccion-formulario {
+  display: flex;
+  flex-direction: column;
+  width: 49vw;
+  margin: 30px;
+}
+.seccion-formulario__button {
+  color: #d4089e;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  height: 30px;
+  width: 15vw;
+  margin: 20px 0 0 180px;
+  background-color: #FDCEDF;
+  border: #99479f solid 2px;
+  border-radius: 10px;
+}
+.seccion-formulario__form {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  margin-left: 100px;
+  justify-content: center;
+}
+
+/*promociones*/
+.seccion-promociones__dosuno {
+  grid-area: dosuno;
+}
+.seccion-promociones__dosuno__img {
+  width: 400px;
+  height: 400px;
+}
+.seccion-promociones__tx-dosuno {
+  grid-area: txdos-uno;
+}
+.seccion-promociones__tx-dosuno__h6 {
+  font-family: "EB Garamond", serif;
+  font-size: 30px;
+}
+.seccion-promociones__tx-cincuenta {
+  grid-area: tx-cincuenta;
+}
+.seccion-promociones__tx-cincuenta__h6 {
+  font-family: "EB Garamond", serif;
+  font-size: 30px;
+}
+.seccion-promociones__cincuenta {
+  grid-area: cincuenta;
+}
+.seccion-promociones__cincuenta__img {
+  width: 400px;
+  height: 400px;
+}
+
+.center {
+  display: grid;
+  justify-content: center;
+}
+
+/*f o o t e r */
+footer {
+  background: radial-gradient(ellipse, #ffade9 0%, #fafafa);
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #FDCEDF;
+}
+
+.lista-redes__ul__li {
+  list-style: none;
+  font-family: "Nunito", sans-serif;
+}
+.lista-redes__ul__li__a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.logo-abajo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #99479f;
+}
+
+.copy {
+  display: flex;
+  font-family: "EB Garamond", serif;
+}
+
+@media (max-width: 1050px) {
+  .contenido-ubicacion {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1050px) {
+  .seccion-promociones {
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 100px 400px 100px;
+    margin: 150px;
+    grid-template-areas: "dosuno " "txdos-uno" "cincuenta" "tx-cincuenta";
+  }
+}
+@media (max-width: 680px) {
+  .titulo-pags {
+    font-size: 70px;
+  }
+  .servicios {
+    width: 310px;
+    margin: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 596px) {
+  .subtitulo {
+    display: inline-block;
+    background-color: #fff0fb;
+    border: 2px solid #FDCEDF;
+    border-radius: 10px;
+  }
+  .servicios-inicio {
+    margin-top: 68px;
+  }
+}
+@media (min-width: 596px) {
+  .servicios-inicio {
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 359px) {
+  .encabezado-pags {
+    width: 465px;
+  }
+  .encabezado {
+    width: 465px;
+  }
+  header {
+    width: 465px;
+  }
+}
+@media (max-width: 350px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 265px;
+    width: 465px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

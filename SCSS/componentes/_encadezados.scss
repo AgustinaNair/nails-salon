@@ -1,0 +1,31 @@
+/*Encabezado*/
+.encabezado{
+    background-image: url(../asses/index-foto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 359px;
+
+    &__h1{
+        font-family: "Bebas";
+        font-size: 150px;
+        margin-bottom: 0;
+    }
+    &__h2{
+        font-family: "Bebas";
+        font-size: 26px;   
+    }
+}
+.encabezado-pags{
+    background-image: url(../asses/index-foto.jpg);
+    background-size: 100%;
+    height: 359px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__h1{
+        font-family: "Bebas";
+        font-size: 150px;
+    }
+}
