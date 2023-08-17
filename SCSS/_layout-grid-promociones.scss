@@ -1,8 +1,8 @@
 .seccion-promociones{
     display: grid;
+    margin-top: 100px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 400px 100px;
-    margin: 150px;
     grid-column-gap: 26px;
     grid-template-areas:
     'dosuno cincuenta'

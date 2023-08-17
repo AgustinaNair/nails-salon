@@ -41,12 +41,29 @@ margin: 30px;
     background-color: #FDCEDF;
     border: #99479f solid 2px;
     border-radius: 10px;
-    }
+     &:active {
+      background-color: #ff91ba;
+      color: #ba058a;
+     }
+  }
+  &__h2{
+    font-family: "Nunito", sans-serif;
+    font-size: 21px;
+  }
   &__form{
     @include d-f-c;
     width: 25vw;
     margin-left: 100px;
     justify-content: center;
+    &__input{
+      border: #d4089e solid 1.3px;
+      border-radius: 7px;
+      &--distinta{
+        border: #d4089e solid 1.3px;
+        border-radius: 7px;
+        height: 4rem;
+      }
+    }
     }
 }
 

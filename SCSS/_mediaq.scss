@@ -3,12 +3,9 @@
       display: flex;
       flex-direction: column;
   }
-}
-@media (max-width:1050px){
   .seccion-promociones{
       grid-template-columns: 1fr;
       grid-template-rows: 400px 100px 400px 100px;
-      margin: 150px;
       grid-template-areas:
       'dosuno '
       'txdos-uno'
@@ -20,49 +17,74 @@
     .titulo-pags{
         font-size: 70px;
     }
-    .servicios{
-      width: 310px;
-      margin: 0px 100px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
   }
-  }
-  @media (max-width:596px){
+@media (max-width:596px){
     .subtitulo{
         display:inline-block;
         background-color: #fff0fb;
         border: 2px solid #FDCEDF;
         border-radius: 10px;
     }
-    .servicios-inicio{
-      margin-top: 68px;
+    .contenido-contacto__section__div {
+      flex-direction: column;
     }
   }
-  @media (min-width:596px){
-    .servicios-inicio{
-        margin-top: 40px;
-        margin-bottom: 100px;
+@media (max-width:459px){
+  .encabezado-pags{
+    width__h1 {
+      font-size: 95px;
     }
   }
-  @media (max-width:359px){
-    .encabezado-pags{
-        width: 465px;
+  .seccion-formulario__button {
+  font-size: 18px;
+  }
+  .contenido-ubicacion{
+    &__p{
+      width: 100%;
     }
-    .encabezado{
-        width: 465px;
-    }
-    header{
-        width: 465px;
+    &__section{
+      width: 100%;
     }
   }
+  .servicios{
+    &__div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+        &__div{
+            &__img{
+                width: 100%;
+                height: 100%;
+            }
+            &__h2{
+              font-size: 19px;
+            }
+        }
+    }
+  }
+
+  .seccion-promociones{
+    &__dosuno{
+      &__img{
+        width: 300px;
+        height: 300px;
+      }
+    }
+    &__cincuenta{
+      &__img{
+        width: 300px;
+        height: 300px; 
+      }
+    }
+  }
+}
   @media (max-width:350px){
     footer{
         display: flex;
         flex-direction: column;
         height: 265px;
-        width: 465px;
+    }
+    .seccion-formulario__button {
+      font-size: 11px;
     }
   } 
-
-  
