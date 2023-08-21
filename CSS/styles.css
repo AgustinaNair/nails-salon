@@ -27,6 +27,7 @@ body {
 .container-contacto {
   width: 100%;
   max-width: none;
+  --bs-gutter-x: 0;
 }
 
 .menu {
@@ -43,17 +44,17 @@ body {
   border-radius: 10px;
   background-color: rgba(253, 206, 223, 0.3215686275);
 }
-.menu__div__img {
+.menu__img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   border: 3px solid #99479f;
   margin: 0px 86px 0px 40px;
 }
-.menu__div__a {
+.menu__a {
   font-size: 1.2em;
 }
-.menu__div__a--grande {
+.menu__a--grande {
   font-size: 1.9em;
   padding-left: 4px;
 }
@@ -101,27 +102,27 @@ body {
   margin-top: 6vh;
   margin-bottom: 6vh;
 }
-
-.servicios-inicio__div__div {
+.servicios-inicio__div {
   display: flex;
   justify-content: space-around;
 }
-.servicios-inicio__div__div__div {
+
+.servicios-div {
   display: flex;
   flex-direction: column;
 }
-.servicios-inicio__div__div__div__a {
+.servicios-div__a {
   text-decoration: none;
   color: black;
   font-size: 1.5rem;
 }
-.servicios-inicio__div__div__div__a__img {
+.servicios-div__img {
   width: 196px;
   height: 196px;
   border-radius: 100px;
   border: 4px solid rgba(0, 0, 0, 0.468);
 }
-.servicios-inicio__div__div__div__a__img--distinta {
+.servicios-div__img--distinta {
   width: 196px;
   height: 196px;
   border-radius: 100px;
@@ -158,14 +159,15 @@ body {
   justify-content: space-around;
 }
 .contenido-ubicacion__p {
-  width: 300px;
+  width: 534px;
+  font-size: 1.5rem;
 }
 .contenido-ubicacion__section {
   border: 5px outset #FDCEDF;
   width: 370px;
   height: 370px;
 }
-.contenido-ubicacion__section__iframe {
+.contenido-ubicacion__iframe {
   width: 100%;
   height: 100%;
 }
@@ -174,49 +176,53 @@ body {
 .servicios {
   margin: 70px;
 }
-.servicios__div {
+.servicios__contenedor {
   display: flex;
   justify-content: center;
 }
-.servicios__div__div {
+.servicios__div {
   width: 310px;
   align-items: center;
   border: solid 3.5px #FDCEDF;
   border-radius: 27px;
   margin: 10px;
   background: rgba(253, 206, 223, 0.5215686275);
+  padding-top: 7px;
 }
-.servicios__div__div__img {
+.servicios__img {
   width: 280px;
   height: 280px;
   border-radius: 50%;
   border: solid 5px #FDCEDF;
 }
-.servicios__div__div__h2 {
-  font-family: "EB Garamond", serif;
+.servicios__h2 {
+  font-family: "Bebas";
   font-size: 35px;
 }
 
 /*contacto*/
 .contenido-contacto {
   margin: 30px 0px 30px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .contenido-contacto__section {
   width: 49vw;
   margin: 30px;
 }
-.contenido-contacto__section__div {
+.contenido-contacto__div {
   display: flex;
   align-items: center;
   padding-left: 10vw;
 }
-.contenido-contacto__section__div__img {
+.contenido-contacto__img {
   margin: 30px;
   width: 100px;
   height: 100px;
   border-radius: 35px;
 }
-.contenido-contacto__section__div__p {
+.contenido-contacto__p {
   font-family: "Nunito", sans-serif;
   text-align: center;
   font-size: 21px;
@@ -234,7 +240,7 @@ body {
   font-size: 1.2rem;
   height: 30px;
   width: 15vw;
-  margin: 20px 0 0 180px;
+  margin: 20px 0 0 150px;
   background-color: #FDCEDF;
   border: #99479f solid 2px;
   border-radius: 10px;
@@ -245,53 +251,52 @@ body {
 }
 .seccion-formulario__h2 {
   font-family: "Nunito", sans-serif;
-  font-size: 21px;
+  font-size: 29px;
 }
 .seccion-formulario__form {
   display: flex;
   flex-direction: column;
   width: 25vw;
-  margin-left: 100px;
   justify-content: center;
 }
-.seccion-formulario__form__input {
+.seccion-formulario__input {
   border: #d4089e solid 1.3px;
   border-radius: 7px;
+  margin: 3px;
+  width: 154%;
+  font-family: "Nunito";
 }
-.seccion-formulario__form__input--distinta {
+.seccion-formulario__input--distinta {
   border: #d4089e solid 1.3px;
   border-radius: 7px;
-  height: 4rem;
+  height: 6rem;
+  margin: 3px;
+  width: 154%;
+  font-family: "Nunito";
 }
 
 /*promociones*/
 .seccion-promociones__dosuno {
   grid-area: dosuno;
 }
-.seccion-promociones__dosuno__img {
-  width: 400px;
-  height: 400px;
-}
 .seccion-promociones__tx-dosuno {
   grid-area: txdos-uno;
-}
-.seccion-promociones__tx-dosuno__h6 {
-  font-family: "EB Garamond", serif;
-  font-size: 30px;
 }
 .seccion-promociones__tx-cincuenta {
   grid-area: tx-cincuenta;
 }
-.seccion-promociones__tx-cincuenta__h6 {
-  font-family: "EB Garamond", serif;
-  font-size: 30px;
-}
 .seccion-promociones__cincuenta {
   grid-area: cincuenta;
 }
-.seccion-promociones__cincuenta__img {
+.seccion-promociones__img {
   width: 400px;
   height: 400px;
+}
+.seccion-promociones__h6 {
+  font-family: "Nunito";
+  font-size: 25px;
+  margin-top: 6px;
+  margin-bottom: 0;
 }
 
 .center {
@@ -310,11 +315,11 @@ footer {
   border-top: 2px solid #FDCEDF;
 }
 
-.lista-redes__ul__li {
+.lista-redes__li {
   list-style: none;
   font-family: "Nunito", sans-serif;
 }
-.lista-redes__ul__li__a {
+.lista-redes__a {
   text-decoration: none;
   color: black;
   font-size: 1.1rem;
@@ -329,23 +334,43 @@ footer {
 
 .copy {
   display: flex;
-  font-family: "EB Garamond", serif;
+  font-family: "Nunito", sans-serif;
 }
 
 @media (max-width: 1050px) {
   .contenido-ubicacion {
     display: flex;
     flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
   }
   .seccion-promociones {
     grid-template-columns: 1fr;
-    grid-template-rows: 400px 100px 400px 100px;
+    grid-template-rows: 300px 100px 300px 100px;
     grid-template-areas: "dosuno " "txdos-uno" "cincuenta" "tx-cincuenta";
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .seccion-promociones__img {
+    width: 300px;
+    height: 300px;
+  }
+  .contenido-contacto {
+    flex-direction: column;
+  }
+  .contenido-contacto__div {
+    padding-left: 0;
+  }
+  .seccion-formulario__button {
+    margin: 20px 0 0 90px;
   }
 }
 @media (max-width: 680px) {
   .titulo-pags {
     font-size: 70px;
+  }
+  .servicios {
+    margin: 30px;
   }
 }
 @media (max-width: 596px) {
@@ -355,7 +380,7 @@ footer {
     border: 2px solid #FDCEDF;
     border-radius: 10px;
   }
-  .contenido-contacto__section__div {
+  .contenido-contacto__div {
     flex-direction: column;
   }
 }
@@ -364,7 +389,7 @@ footer {
     font-size: 95px;
   }
   .seccion-formulario__button {
-    font-size: 18px;
+    font-size: 16px;
   }
   .contenido-ubicacion__p {
     width: 100%;
@@ -372,25 +397,17 @@ footer {
   .contenido-ubicacion__section {
     width: 100%;
   }
-  .servicios__div {
+  .servicios__contenedor {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .servicios__div__div__img {
+  .servicios__img {
     width: 100%;
     height: 100%;
   }
-  .servicios__div__div__h2 {
+  .servicios__h2 {
     font-size: 19px;
-  }
-  .seccion-promociones__dosuno__img {
-    width: 300px;
-    height: 300px;
-  }
-  .seccion-promociones__cincuenta__img {
-    width: 300px;
-    height: 300px;
   }
 }
 @media (max-width: 350px) {

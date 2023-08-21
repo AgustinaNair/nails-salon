@@ -4,6 +4,7 @@ body{
 .container-contacto{
   width: 100%;
   max-width: none;
+  --bs-gutter-x: 0;
 }
 .menu {
     background:linear-gradient(to top, #fafafa, $background-rosita);
@@ -19,21 +20,20 @@ body{
         border-radius: 10px;
         background-color: #fdcedf52;
       }
+    }
+    &__img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #99479f;
+      margin: 0px 86px 0px 40px;
+    }
+    &__a {
+      font-size: 1.2em;
   
-      &__img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        border: 3px solid #99479f;
-        margin: 0px 86px 0px 40px;
-      }
-      &__a {
-        font-size: 1.2em;
-    
-        &--grande {
-          font-size: 1.9em;
-          padding-left: 4px;
-        }
+      &--grande {
+        font-size: 1.9em;
+        padding-left: 4px;
       }
     }
   }

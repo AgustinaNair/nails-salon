@@ -1,32 +1,33 @@
-
 /*Lista/Fotos de servicios en inicio*/
 .servicios-inicio{
     margin-top: 6vh;
     margin-bottom: 6vh;
+    &__div{
+        display: flex;
+        justify-content: space-around;
+    }
   }
-.servicios-inicio__div__div{
-    display: flex;
-    justify-content: space-around;
-    &__div {
-        @include d-f-c;
-        &__a{
-            text-decoration: none;
-            color: black;
-            font-size: 1.5rem;
-            &__img{
-                width: 196px;
-                height: 196px;
-                border-radius: 100px;
-                border: 4px solid rgba(0, 0, 0, 0.468);
-                &--distinta{
-                    width: 196px;
-                    height: 196px;
-                    border-radius: 100px;
-                }
-            }
+
+.servicios-div{
+    @include d-f-c;
+     &__a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+     }
+    &__img{
+        width: 196px;
+        height: 196px;
+        border-radius: 100px;
+        border: 4px solid rgba(0, 0, 0, 0.468);
+        &--distinta{
+            width: 196px;
+            height: 196px;
+            border-radius: 100px;
         }
     }
 }
+
 /* Contenido de inicio */
 .cont-inicio{
     display: flex;

@@ -2,28 +2,21 @@
 .seccion-promociones{
     &__dosuno{
         grid-area: dosuno;
-        &__img{
-            @include w-h-400;
-        }
     }
-    
     &__tx-dosuno{
         grid-area: txdos-uno;
-        &__h6{
-            @include h6;
-        }
     }
     &__tx-cincuenta{
         grid-area: tx-cincuenta;
-        &__h6{
-            @include h6;
-        }
     }
     &__cincuenta{
         grid-area: cincuenta;
-        &__img{
-            @include w-h-400;
-        }
+    }
+    &__img{
+        @include w-h-400;
+    }
+    &__h6{
+        @include h6;
     }
 }
 

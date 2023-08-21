@@ -8,17 +8,16 @@ footer{
     align-items: center;
     border-top: 2px solid $border;
 }
-
-.lista-redes__ul__li{
-list-style: none;
-font-family: 'Nunito', sans-serif;
-
-    &__a{
-    text-decoration: none;
-    color: black;
-    font-size: 1.1rem;
+.lista-redes{
+    &__li{
+        list-style: none;
+        font-family: 'Nunito', sans-serif;
     }
-
+    &__a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+        }        
 }
 .logo-abajo{
     width: 90px;
@@ -28,6 +27,6 @@ font-family: 'Nunito', sans-serif;
 }
 .copy{
     display: flex;
-    font-family: 'EB Garamond', serif;
+    font-family: "Nunito", sans-serif;
 }
 

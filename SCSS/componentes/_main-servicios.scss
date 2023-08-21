@@ -1,27 +1,28 @@
 /*servicios*/
 .servicios{
     margin: 70px;
-    &__div{
+    &__contenedor{
         display: flex;
         justify-content: center;
-        &__div{
-            width: 310px;
-            align-items: center;
-            border: solid 3.5px $border;
-            border-radius: 27px;
-            margin: 10px;
-            background: #fdcedf85;
-            &__img{
-                width: 280px;
-                height: 280px;
-                border-radius: 50%;
-                border: solid 5px $border;
-            }
-            &__h2{
-                font-family: 'EB Garamond', serif;
-                font-size: 35px;
-            }
-        }
+    }
+    &__div{
+        width: 310px;
+        align-items: center;
+        border: solid 3.5px $border;
+        border-radius: 27px;
+        margin: 10px;
+        background: #fdcedf85;
+        padding-top: 7px;
+    }
+    &__img{
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        border: solid 5px $border;
+    }
+    &__h2{
+        font-family: "Bebas";
+        font-size: 35px;
     }
 }
     
